@@ -93,6 +93,9 @@
 /Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/R.cs.flag
 /Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/uploadflags.txt
 /Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/res/drawable/incident.png
+/Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/res/drawable/home.png
+/Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/res/drawable/warning.png
+/Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/res/drawable/logout.png
 /Users/iem/Documents/XAMARIN/ProjetIncident/Droid/bin/Debug/Mono.Android.pdb
 /Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/linksrc/ProjetIncident.Droid.pdb
 /Users/iem/Documents/XAMARIN/ProjetIncident/Droid/obj/Debug/linksrc/Mono.Android.pdb
