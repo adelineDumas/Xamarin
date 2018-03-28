@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{7A3B4D4E-CBF5-4B73-A255-A64D4129F638}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/View/ConnexionView.xaml">
+    <Files>
+      <File FileName="ProjetIncident.Core/View/ConnexionView.xaml" Line="15" Column="53" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ProjetIncident.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6A69C30D-99C9-4880-B31B-064B602210D0">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.ProjetIncident.iOS>
+  <MonoDevelop.Ide.ItemProperties.ProjetIncident.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.9cc8d319" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

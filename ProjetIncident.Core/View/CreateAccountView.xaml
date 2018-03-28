@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Teal" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.View.CreateAccountView">
+    <Grid VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="9*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="110,0,0,40" Text="Créer un compte" TextColor="white" FontSize="22" FontAttributes="Italic" FontFamily="Droid Sans Mono"> </Label>
+        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Nom" Text="{Binding Nom}"></Entry>
+        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Prenom" Text="{Binding Prenom}"></Entry>
+        <Entry Grid.Row="3" Grid.Column="1" Placeholder="Mail" Text="{Binding Mail}"></Entry>
+        <Entry Grid.Row="4" Grid.Column="1" IsPassword="true" Placeholder="Password" Text="{Binding Password}"></Entry>
+
+        <Button Grid.Row="5" Grid.Column="1" Text="Créer un compte" Command="{Binding CreateAccount}" TextColor="Black" BackgroundColor="white" ></Button>
+        <Button Grid.Row="6" Grid.Column="1" Text="Je possède déjà un compte" Command="{Binding Retour}" TextColor="Black" BackgroundColor="white" ></Button>
+    </Grid>
+</ContentPage>

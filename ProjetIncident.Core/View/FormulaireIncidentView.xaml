@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ProjetIncident.Core.View.FormulaireIncidentView" 
+             Title="Ajouter un incident">
+	<Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="1*"></RowDefinition>
+        <RowDefinition Height="1*"></RowDefinition>
+        <RowDefinition Height="2*"></RowDefinition>
+        <RowDefinition Height="1*"></RowDefinition>
+        <RowDefinition Height="1*"></RowDefinition>
+        <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1*"></ColumnDefinition>
+        <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Entry Grid.Row="0" Grid.ColumnSpan="2" Placeholder="Titre" Text="{Binding Titre}"></Entry>
+        <Label Grid.Row="1" Text="Description"></Label>
+        <Editor Grid.Row="2" Grid.ColumnSpan="2"  Text="{Binding Description}"></Editor>
+        <Entry Grid.Row="3" Grid.ColumnSpan="2" Placeholder="Date"></Entry>
+        <Button Grid.Row="4" Grid.Column="0" Text="Add photos"></Button>
+        <Button Grid.Row="4" Grid.Column="1" Text="Add localisation"></Button>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Text="Submit" Command="{Binding Submit}"></Button>
+        
+    </Grid>
+</ContentPage>

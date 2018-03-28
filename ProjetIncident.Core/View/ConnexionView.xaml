@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Teal" 
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ProjetIncident.Core.View.ConnexionView">
+    <Grid VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="9*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="120,50,0,0" Text="Incident App" TextColor="white" FontSize="22" FontAttributes="Italic" FontFamily="Droid Sans Mono"> </Label>
+        <Image Grid.Row="1" Source="incident.png" Grid.ColumnSpan="3"></Image>
+        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Mail" Text="{Binding Mail}" Margin="0,0,0,10"></Entry>
+        <Entry Grid.Row="3" Grid.Column="1" IsPassword="true" Placeholder="Password" Text="{Binding Password}" Margin="0,0,0,10"></Entry>
+        <Button Grid.Row="4" Grid.Column="1" Text="Connexion" Command="{Binding Connexion}" Margin="0,0,0,20" TextColor="Black" BackgroundColor="white" ></Button>
+        <Button Grid.Row="5" Grid.Column="1" Text="Créer un compte" Command="{Binding CreateAccount}" Margin="0,0,0,20" TextColor="Black" BackgroundColor="white" ></Button>
+    </Grid>
+</ContentPage>
