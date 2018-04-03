@@ -48,5 +48,11 @@ namespace ProjetIncident.Core.Model
         public Incident()
         {
         }
+
+        public Incident(String pDescription, DateTime pDate)
+        {
+            this.Description = pDescription;
+            this.SubmissionDate = pDate; 
+        }
     }
 }

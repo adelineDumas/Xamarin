@@ -16,11 +16,11 @@ namespace ProjetIncident.Core.ViewModel
 
         public ConnexionViewModel()
         {
-            Connexion = new Command (() =>
+            Connexion = new Command (async () =>
             {
                 if (String.IsNullOrEmpty(Mail) || String.IsNullOrEmpty(Password))
                 {
-                    
+                    await Application.Current.MainPage.DisplayAlert("Attention", "Veuillez remplir tous les champs", "OK");
                 }
                 else {
 

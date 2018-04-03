@@ -16,11 +16,11 @@ namespace ProjetIncident.Core.ViewModel
 
         public CreateAccountViewModel()
         {
-            CreateAccount = new Command(() =>
+            CreateAccount = new Command(async () =>
             {
                 if (String.IsNullOrEmpty(Nom) || String.IsNullOrEmpty(Prenom) || String.IsNullOrEmpty(Mail) || String.IsNullOrEmpty(Password))
                 {
-                   //toast vide  
+                    await Application.Current.MainPage.DisplayAlert("Attention", "Veuillez remplir tous les champs", "OK");
                 }
                 else {
                     Application.Current.MainPage = MasterDetailPageNavigationView.GetInstance();

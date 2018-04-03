@@ -9,7 +9,7 @@ namespace ProjetIncident.Core.View
     {
         public FormulaireIncidentView()
         {
-            this.BindingContext = new ViewModel.DescriptionIncidentViewModel(); 
+            this.BindingContext = new ViewModel.FormulaireIncidentViewModel(); 
             InitializeComponent();
         }
 

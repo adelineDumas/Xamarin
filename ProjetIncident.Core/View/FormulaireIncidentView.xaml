@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage BackgroundColor="Teal"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="ProjetIncident.Core.View.FormulaireIncidentView" 
              Title="Ajouter un incident">
 	<Grid>
         <Grid.RowDefinitions>
+        <RowDefinition Height="1.5*"></RowDefinition>
         <RowDefinition Height="1*"></RowDefinition>
         <RowDefinition Height="1*"></RowDefinition>
-        <RowDefinition Height="2*"></RowDefinition>
+        <RowDefinition Height="4*"></RowDefinition>
         <RowDefinition Height="1*"></RowDefinition>
-        <RowDefinition Height="1*"></RowDefinition>
-        <RowDefinition Height="1*"></RowDefinition>
+        <RowDefinition Height="0.8*"></RowDefinition>
+        <RowDefinition Height="0.8*"></RowDefinition>
+        <RowDefinition Height="0.8*"></RowDefinition>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
         <ColumnDefinition Width="1*"></ColumnDefinition>
         <ColumnDefinition Width="1*"></ColumnDefinition>
+        <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Entry Grid.Row="0" Grid.ColumnSpan="2" Placeholder="Titre" Text="{Binding Titre}"></Entry>
-        <Label Grid.Row="1" Text="Description"></Label>
-        <Editor Grid.Row="2" Grid.ColumnSpan="2"  Text="{Binding Description}"></Editor>
-        <Entry Grid.Row="3" Grid.ColumnSpan="2" Placeholder="Date"></Entry>
-        <Button Grid.Row="4" Grid.Column="0" Text="Add photos"></Button>
-        <Button Grid.Row="4" Grid.Column="1" Text="Add localisation"></Button>
-        <Button Grid.Row="5" Grid.ColumnSpan="2" Text="Submit" Command="{Binding Submit}"></Button>
+        <Image Grid.Row="0" Grid.Column="1" Source="incident.png" Margin="10" ></Image>
+        <Entry Grid.Row="1" Grid.ColumnSpan="3" Placeholder="Titre" Text="{Binding Titre}" Margin="10,0,10,0"></Entry>
+        <Label Grid.Row="2" Text="Description : " TextColor="White" Margin="10,0,0,0"></Label>
+        <Editor Grid.Row="3" Grid.ColumnSpan="3"  Text="{Binding Description}" Margin="10,0,10,10"></Editor>
+        <DatePicker Grid.Row="4" Grid.ColumnSpan="3" Margin="10,0,10,0" Date="{Binding Date, Mode=OneWayToSource}"></DatePicker>
+        <Image x:Name="PhotoImage" Grid.Row="5"></Image>
+        <Button Grid.Row="6" Grid.Column="0" Text="Add photos" Command="{Binding AddPhotos}" TextColor="White"></Button>
+        <Button Grid.Row="6" Grid.Column="2" Text="Add local" Command="{Binding AddLocalisation}" TextColor="White"></Button>
+        <Button Grid.Row="7" Grid.Column="1" Text="Submit" Command="{Binding Submit}" TextColor="White"></Button>
         
     </Grid>
 </ContentPage>

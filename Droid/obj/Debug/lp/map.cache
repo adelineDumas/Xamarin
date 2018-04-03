@@ -13,6 +13,10 @@ Microsoft.Extensions.Logging
 Microsoft.Extensions.Options
 Microsoft.Extensions.Primitives
 Plugin.CurrentActivity
+Plugin.Media.Abstractions
+Plugin.Media
+Plugin.Permissions.Abstractions
+Plugin.Permissions
 ProjetIncident.Core
 Remotion.Linq
 SQLitePCLRaw.batteries_green

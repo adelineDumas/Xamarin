@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage BackgroundColor="Teal" xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="ProjetIncident.Core.View.DescriptionIncidentView" 
     Title="Accueil">
@@ -9,8 +9,8 @@
             <RowDefinition Height="9*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Margin="15" Text="Liste des incidents" HorizontalTextAlignment="Center"></Label>
-        <ListView Grid.Row="1" ItemsSource="{Binding ListeDescriptionIncident}" SelectedItem="{Binding SelectedListValue}"></ListView>
-         <Button Grid.Row="2" Text="Add" Command="{Binding Add}" />
+        <Label Grid.Row="0" Margin="15" Text="Liste des incidents" HorizontalTextAlignment="Center" TextColor="White"></Label>
+        <ListView Grid.Row="1" ItemsSource="{Binding ListeDescriptionIncident}" SelectedItem="{Binding SelectedListValue}" Margin="10,0,10,0" ></ListView>
+         <Button Grid.Row="2" Text="Add" Command="{Binding Add}" TextColor="White"/>
     </Grid>
 </ContentPage>

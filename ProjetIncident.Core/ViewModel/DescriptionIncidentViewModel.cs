@@ -10,7 +10,7 @@ namespace ProjetIncident.Core.ViewModel
     {
         public string Titre { get; set; }
         public string Description { get; set; }
-        public ICommand Submit { protected set; get; }
+
         public ICommand Add { protected set; get; }
 
 
@@ -26,17 +26,16 @@ namespace ProjetIncident.Core.ViewModel
             ListeDescriptionIncident.Add(new DTO.DescriptionIncident("Dégradation de banc", "Avenue Maginot, un banc a été abimé. RIP"));
             ListeDescriptionIncident.Add(new DTO.DescriptionIncident("Dégats", "Suite à l'ouragan qui est passé hier à Bourg en Bresse, tout est abimé."));
 
-            Submit = new Command (() =>
-            {
-                ListeDescriptionIncident.Add(new DTO.DescriptionIncident(Titre, Description));
-                MasterDetailPageNavigationView.GetInstance().NextPage(typeof(DescriptionIncidentView)); 
-             }); 
 
             Add = new Command (() =>
             {
                 MasterDetailPageNavigationView.GetInstance().NextPage(typeof(FormulaireIncidentView)); 
                
              }); 
+        }
+
+        public async System.Threading.Tasks.Task InitialisationBDAsync(){
+            var lDb = await DAL.IncidentDbContext.GetCurrent(); 
         }
 
     }
