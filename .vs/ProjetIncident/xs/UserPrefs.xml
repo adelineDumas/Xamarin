@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{7A3B4D4E-CBF5-4B73-A255-A64D4129F638}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/ViewModel/FormulaireIncidentViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/ViewModel/ConnexionViewModel.cs">
     <Files>
-      <File FileName="ProjetIncident.Core/ViewModel/FormulaireIncidentViewModel.cs" Line="18" Column="58" />
-      <File FileName="ProjetIncident.Core/ViewModel/DescriptionIncidentViewModel.cs" Line="33" Column="14" />
+      <File FileName="ProjetIncident.Core/ViewModel/FormulaireIncidentViewModel.cs" Line="36" Column="51" />
+      <File FileName="ProjetIncident.Core/ViewModel/DescriptionIncidentViewModel.cs" Line="6" Column="1" />
+      <File FileName="ProjetIncident.Core/ViewModel/ConnexionViewModel.cs" Line="29" Column="117" />
+      <File FileName="ProjetIncident.Core/ViewModel/CreateAccountViewModel.cs" Line="28" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ProjetIncident.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6A69C30D-99C9-4880-B31B-064B602210D0" automaticSigning="False" />

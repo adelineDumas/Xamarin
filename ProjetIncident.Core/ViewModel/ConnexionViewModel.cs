@@ -3,6 +3,8 @@ using System.Windows.Input;
 using ProjetIncident.Core.View;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjetIncident.Core.ViewModel
 {
@@ -23,8 +25,14 @@ namespace ProjetIncident.Core.ViewModel
                     await Application.Current.MainPage.DisplayAlert("Attention", "Veuillez remplir tous les champs", "OK");
                 }
                 else {
-
-                    Application.Current.MainPage = MasterDetailPageNavigationView.GetInstance();
+                    var lDb = await DAL.IncidentDbContext.GetCurrent();
+                    if (lDb.Users.Where(i => i.Mail == Mail && i.EncryptedPassword == Password).ToList().Count == 1)
+                    {
+                        Application.Current.MainPage = MasterDetailPageNavigationView.GetInstance();
+                    }
+                    else {
+                        await Application.Current.MainPage.DisplayAlert("Attention", "Cet utilisateur n'existe pas", "OK");
+                    }
                 }
              });
 

@@ -24,15 +24,16 @@ namespace ProjetIncident.Core.ViewModel
 
             Submit = new Command(async () =>
             {
-                var lDb = await DAL.IncidentDbContext.GetCurrent(); 
+                
                 if (String.IsNullOrEmpty(Titre) || String.IsNullOrEmpty(Description))
                 {
                     await Application.Current.MainPage.DisplayAlert("Attention", "Veuillez remplir tous les champs", "OK");
                 }
                 else {
                     var lIncident = new Model.Incident(Description, Date); 
-                    lDb.Add(lIncident);
-                    lDb.SaveChanges(); 
+                    var lDb = await DAL.IncidentDbContext.GetCurrent(); 
+                    await lDb.AddAsync(lIncident); 
+                    await lDb.SaveChangesAsync(); 
                     MasterDetailPageNavigationView.GetInstance().NextPage(typeof(DescriptionIncidentView));
                 }
             }); 

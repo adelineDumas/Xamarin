@@ -3,6 +3,8 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using ProjetIncident.Core.View;
 using Xamarin.Forms;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjetIncident.Core.ViewModel
 {
@@ -35,7 +37,11 @@ namespace ProjetIncident.Core.ViewModel
         }
 
         public async System.Threading.Tasks.Task InitialisationBDAsync(){
-            var lDb = await DAL.IncidentDbContext.GetCurrent(); 
+            var lDb = await DAL.IncidentDbContext.GetCurrent();
+            var listItems = lDb.Incidents.ToList();
+            for (int i = 0; i < listItems.Count; i++){
+               // ListeDescriptionIncident.Add(listItems[i]);
+            }
         }
 
     }

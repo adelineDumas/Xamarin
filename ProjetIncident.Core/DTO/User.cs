@@ -27,5 +27,12 @@ namespace ProjetIncident.Core.Model
         {
 
         }
+
+        public User(string pLastName, string pFirstName, string pMail, string pPassword){
+            this.LastName = pLastName;
+            this.FirstName = FirstName;
+            this.Mail = pMail;
+            this.EncryptedPassword = pPassword; 
+        }
     }
 }

@@ -23,6 +23,10 @@ namespace ProjetIncident.Core.ViewModel
                     await Application.Current.MainPage.DisplayAlert("Attention", "Veuillez remplir tous les champs", "OK");
                 }
                 else {
+                    var lUser = new Model.User(Nom, Prenom, Mail, Password); 
+                    var lDb = await DAL.IncidentDbContext.GetCurrent(); 
+                    await lDb.AddAsync(lUser); 
+                    await lDb.SaveChangesAsync(); 
                     Application.Current.MainPage = MasterDetailPageNavigationView.GetInstance();
                 }
             });
