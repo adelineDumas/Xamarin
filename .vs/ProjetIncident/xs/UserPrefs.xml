@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{7A3B4D4E-CBF5-4B73-A255-A64D4129F638}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/ViewModel/FormulaireIncidentViewModel.cs">
+    <Files>
+      <File FileName="ProjetIncident.Core/ViewModel/FormulaireIncidentViewModel.cs" Line="18" Column="58" />
+      <File FileName="ProjetIncident.Core/ViewModel/DescriptionIncidentViewModel.cs" Line="33" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ProjetIncident.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6A69C30D-99C9-4880-B31B-064B602210D0" automaticSigning="False" />
   <MonoDevelop.Ide.ItemProperties.ProjetIncident.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.9cc8d319" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

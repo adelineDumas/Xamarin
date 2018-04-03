@@ -12,3 +12,4 @@
 /Users/iem/Documents/XAMARIN/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.AssemblyInfo.cs
 /Users/iem/Documents/XAMARIN/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.dll
 /Users/iem/Documents/XAMARIN/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.pdb
+/Users/iem/Documents/XAMARIN/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.csprojResolveAssemblyReference.cache

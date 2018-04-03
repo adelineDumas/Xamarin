@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="1*"></ColumnDefinition>
+        <ColumnDefinition Width="1*"></ColumnDefinition>    
         <ColumnDefinition Width="1*"></ColumnDefinition>
         <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
@@ -28,7 +28,7 @@
         <Editor Grid.Row="3" Grid.ColumnSpan="3"  Text="{Binding Description}" Margin="10,0,10,10"></Editor>
         <DatePicker Grid.Row="4" Grid.ColumnSpan="3" Margin="10,0,10,0" Date="{Binding Date, Mode=OneWayToSource}"></DatePicker>
         <Image x:Name="PhotoImage" Grid.Row="5"></Image>
-        <Button Grid.Row="6" Grid.Column="0" Text="Add photos" Command="{Binding AddPhotos}" TextColor="White"></Button>
+        <Button x:Name="CameraButton" Grid.Row="6" Grid.Column="0" Text="Add photos" Command="{Binding AddPhotos}" TextColor="White"></Button>
         <Button Grid.Row="6" Grid.Column="2" Text="Add local" Command="{Binding AddLocalisation}" TextColor="White"></Button>
         <Button Grid.Row="7" Grid.Column="1" Text="Submit" Command="{Binding Submit}" TextColor="White"></Button>
         

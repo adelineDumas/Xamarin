@@ -4,8 +4,7 @@ using ProjetIncident.Core.View;
 using Xamarin.Forms;
 using Plugin.Media;
 using System.Linq;
-using Microsoft.EntityFrameworkCore; 
-
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjetIncident.Core.ViewModel
 {
@@ -38,7 +37,7 @@ namespace ProjetIncident.Core.ViewModel
                 }
             }); 
 
-            AddPhotos = new Command(async () =>
+            /*AddPhotos = new Command(async () =>
             {
                 await CrossMedia.Current.Initialize();
                 var photo = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions()
@@ -49,11 +48,11 @@ namespace ProjetIncident.Core.ViewModel
 
                 });
 
-                if (photo != null)
+                /*if (photo != null)
                 {
-                    PhotoImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
+                    this.PhotoImage.Source = ImageSource.FromStream(photo.GetStream);
                 }
-            }); 
+            }); */
             
         }
     }
