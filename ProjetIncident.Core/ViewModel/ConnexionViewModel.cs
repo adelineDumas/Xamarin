@@ -25,14 +25,15 @@ namespace ProjetIncident.Core.ViewModel
                     await Application.Current.MainPage.DisplayAlert("Attention", "Veuillez remplir tous les champs", "OK");
                 }
                 else {
-                    var lDb = await DAL.IncidentDbContext.GetCurrent();
+                    /*var lDb = await DAL.IncidentDbContext.GetCurrent();
                     if (lDb.Users.Where(i => i.Mail == Mail && i.EncryptedPassword == Password).ToList().Count == 1)
                     {
                         Application.Current.MainPage = MasterDetailPageNavigationView.GetInstance();
                     }
                     else {
                         await Application.Current.MainPage.DisplayAlert("Attention", "Cet utilisateur n'existe pas", "OK");
-                    }
+                    }*/
+                    Application.Current.MainPage = MasterDetailPageNavigationView.GetInstance();
                 }
              });
 

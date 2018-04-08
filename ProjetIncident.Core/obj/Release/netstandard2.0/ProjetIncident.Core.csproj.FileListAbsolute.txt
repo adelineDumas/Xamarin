@@ -1,0 +1,14 @@
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\bin\Release\netstandard2.0\ProjetIncident.Core.deps.json
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\bin\Release\netstandard2.0\ProjetIncident.Core.dll
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\bin\Release\netstandard2.0\ProjetIncident.Core.pdb
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.csproj.CoreCompileInputs.cache
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.App.xaml.g.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.View.DescriptionIncidentView.xaml.g.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.View.FormulaireIncidentView.xaml.g.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.View.ConnexionView.xaml.g.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.View.MasterDetailPageNavigationView.xaml.g.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.View.CreateAccountView.xaml.g.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.AssemblyInfoInputs.cache
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.AssemblyInfo.cs
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.dll
+C:\Users\Adel\Documents\Documents\IEM\Xamarin\ProjetIncident.Core\obj\Release\netstandard2.0\ProjetIncident.Core.pdb
